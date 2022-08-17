@@ -12,9 +12,11 @@
     <header class="header">
         <div class="header__container">
             <div class="header__upmenu">
-                <object data="./img/burger.svg" type="image/svg+xml" class="header__burger">
-                    Ваш браузер не поддерживает SVG!
-                </object>
+                <a href="#" class="header__burger">
+                    <object data="./img/burger.svg" type="image/svg+xml" class="header__burger-img">
+                        Ваш браузер не поддерживает SVG!
+                    </object>
+                </a>
                 <a href="#" class="header__logo logo">
                     <object data="./img/logo/logo.svg" type="image/svg+xml" class="logo__image">
                         Ваш браузер не поддерживает SVG!
@@ -133,6 +135,157 @@
                 </ul>
             </div>
         </nav>
+        <section class="assortment">
+            <div class="assortment__container">
+                <p class="assortment__title">Отопительное оборудование</p>
+                <div class="assortment__body">
+                    <div class="assortment__sidefilters sidefilters">
+                        <div class="sidefilters__header">
+                            <p class="sidefilters__title">Фильтры</p>
+                            <a href="#" class="sidefilters__reset">
+                                Сбросить
+                            </a>
+                            <a href="#" class="sidefilters__burger">
+                                <object data="./img/burger-close.svg" type="image/svg+xml" class="sidefilters__burger-img">
+                                    Ваш браузер не поддерживат SVG!
+                                </object>
+                            </a>
+                        </div>
+                        <div class="sidefilters__body">
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_types">
+                                <input type="checkbox" id="sidefilterType" name="sidefilter__group" class="sidefilter__group">
+                                <label for="sidefilterType" class="sidefilter__title">Отопительное оборудование</label>
+                                <section class="sidefilter__content">
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chType1" name="chType1" value="yes" checked>
+                                        <label class="sidefilter__label" for="chType1">Радиаторы отопления</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chType2" name="chType2" value="yes">
+                                        <label class="sidefilter__label" for="chType2">Конвекторы отопления</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chType3" name="chType3" value="yes">
+                                        <label class="sidefilter__label" for="chType3">Полотенцесушители</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chType4" name="chType4" value="yes">
+                                        <label class="sidefilter__label" for="chType4">Арматура для радиаторов</label>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_brands">
+                                <input type="checkbox" id="sidefilterBrand" name="sidefilter__group" class="sidefilter__group">
+                                <label for="sidefilterBrand" class="sidefilter__title">Бренд</label>
+                                <section class="sidefilter__content">
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chBand1" name="chBand1" value="yes">
+                                        <label class="sidefilter__label" for="chBand1">Purmo</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chBand2" name="chBand2" value="yes">
+                                        <label class="sidefilter__label" for="chBand2">Irsap</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chBand3" name="chBand3" value="yes">
+                                        <label class="sidefilter__label" for="chBand3">Terma</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chBand4" name="chBand4" value="yes">
+                                        <label class="sidefilter__label" for="chBand4">Loten</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chBand5" name="chBand5" value="yes">
+                                        <label class="sidefilter__label" for="chBand5">Guardo</label>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_prices">
+                                <p class="sidefilter__title-price">Цена</p>
+                                <div class="sidefilter__price-slider priceSlider" id="priceSlider">
+                                    <div>
+                                        <div class="priceSlider__block-min" onMouseDown="moveRange(this);" onTouchStart="moveRange(this);"></div>
+                                        <div class="priceSlider__color-range"></div>
+                                        <div class="priceSlider__block-max" onMouseDown="moveRange(this)" onTouchStart="moveRange(this);" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_sections">
+                                <input type="checkbox" id="sidefilterSections" name="sidefilter__group" class="sidefilter__group">
+                                <label for="sidefilterSections" class="sidefilter__title">Количество секций</label>
+                                <section class="sidefilter__content">
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSection1" name="chSection1" value="yes">
+                                        <label class="sidefilter__label" for="chSection1">4</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSection2" name="chSection2" value="yes">
+                                        <label class="sidefilter__label" for="chSection2">6</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSection3" name="chSection3" value="yes">
+                                        <label class="sidefilter__label" for="chSection3">8</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSection4" name="chSection4" value="yes">
+                                        <label class="sidefilter__label" for="chSection4">12</label>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_webdistances">
+                                <input type="checkbox" id="sidefilterWebdistances" name="sidefilter__group" class="sidefilter__group">
+                                <label for="sidefilterWebdistances" class="sidefilter__title">Межосетевое расстояние</label>
+                                <section class="sidefilter__content">
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chWebdist1" name="chWebdist1" value="yes">
+                                        <label class="sidefilter__label" for="chWebdist1">20 см</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chWebdist2" name="chWebdist2" value="yes">
+                                        <label class="sidefilter__label" for="chWebdist2">35 см</label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chWebdist3" name="chWebdist3" value="yes">
+                                        <label class="sidefilter__label" for="chWebdist3">50 см</label>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="sidefilters__sidefilter sidefilter sidefilter_squares">
+                                <input type="checkbox" id="sidefilterSquares" name="sidefilter__group" class="sidefilter__group">
+                                <label for="sidefilterSquares" class="sidefilter__title">Площадь отопления</label>
+                                <section class="sidefilter__content">
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSquare1" name="chSquare1" value="yes">
+                                        <label class="sidefilter__label" for="chSquare1">Более 19 м<sup>2</sup></label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSquare2" name="chSquare2" value="yes">
+                                        <label class="sidefilter__label" for="chSquare2">Менее 8 м<sup>2</sup></label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSquare3" name="chSquare3" value="yes">
+                                        <label class="sidefilter__label" for="chSquare3">от 10 до 14 м<sup>2</sup></label>
+                                    </div>
+                                    <div class="sidefilter__input sidefilter__input_checkbox">
+                                        <input type="checkbox" class="sidefilter__checkbox" id="chSquare4" name="chSquare4" value="yes">
+                                        <label class="sidefilter__label" for="chSquare4">от 15 до 26 м<sup>2</sup></label>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assortment__content">
+                        <div class="assortment__topfilters topfilters">
+
+                        </div>
+                        <div class="assortment__productslist">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="./js/SliderPrice.js"></script>
 </body>
 </html>
