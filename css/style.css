@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* =====ОБНУЛЕНИЕ СТИЛЕЙ===== */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-display: swap;
+  src: url("./../fonts/Euclid Circular A Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  font-display: swap;
+  src: url("./../fonts/Euclid Circular A Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  font-display: swap;
+  src: url("./../fonts/Euclid Circular A Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  font-display: swap;
+  src: url("./../fonts/Euclid Circular A SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  font-display: swap;
+  src: url("./../fonts/Euclid Circular A Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("./../fonts/Gilroy-Medium.woff2") format("woff2"), url("./../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  font-display: swap;
+  src: url("./../fonts/Circe-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --color-main: #2B2E34;
+  --color-white: #FFFFFF;
+}
+
+[class*=__container] {
+  max-width: 1521px;
+  margin: 0px auto;
+}
+
+.body {
+  font-family: "Euclid Circular A";
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-main);
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 17px 0px 30px 0px;
+}
+.header__upmenu {
+  display: flex;
+  align-items: center;
+  padding-bottom: 47.11px;
+}
+.header__logo {
+  margin-left: 76.62px;
+}
+.header__search {
+  margin-left: 72px;
+  width: 815px;
+  height: 54px;
+  background: url("./../img/icons/search.svg") no-repeat 30.88px center;
+  background-color: #F7F7F7;
+  padding: 0px 66px;
+  font-size: 15px;
+  line-height: 19px;
+  color: #73737B;
+}
+.header__buttons {
+  margin-top: 2px;
+  margin-left: 102px;
+  display: flex;
+  align-items: center;
+}
+.header__delivery {
+  display: flex;
+  align-items: center;
+}
+.header__cabinet {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+}
+.header__cart {
+  margin-left: 34px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__cart::before {
+  position: absolute;
+  right: -12px;
+  top: -8px;
+  display: block;
+  content: "3";
+  width: 16.12px;
+  height: 16.12px;
+  text-align: center;
+  background: #1DBCD2;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16.5px;
+  color: var(--color-white);
+}
+.header__downmenu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18.38px;
+}
+.logo__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo__title {
+  display: flex;
+  align-items: center;
+  margin-left: -1px;
+}
+.logo__name {
+  font-size: 13px;
+  line-height: 16px;
+  color: #555555;
+  margin-top: 8px;
+  margin-left: -1px;
+}
+
+.downmenu__items {
+  display: flex;
+  align-items: center;
+}
+.downmenu__item_phone {
+  margin-left: 168px;
+}
+.downmenu__item_mail {
+  margin-left: 168px;
+}
+.downmenu__item_edit {
+  margin-left: 168px;
+}
+.downmenu__item_contacts {
+  margin-left: 165px;
+}
+.downmenu__item_contacts .downmenu__link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.downmenu__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.downmenu__icon {
+  display: flex;
+  align-items: center;
+}
+.downmenu__text {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--color-main);
+}
+
+.banner {
+  background: linear-gradient(91.79deg, #1DBCD1 16.94%, #3DDCF1 83.14%);
+  position: relative;
+}
+.banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 82px 0px 82px 0px;
+}
+.banner__text {
+  width: 579px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+}
+.banner__title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 53px;
+  color: var(--color-white);
+}
+.banner__description {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-white);
+}
+.banner__image {
+  max-width: 613.38px;
+  position: absolute;
+  bottom: 0px;
+  left: 861px;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+}
+.banner__button {
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_banner {
+  width: 282px;
+  height: 78px;
+  background: var(--color-white);
+  border-radius: 2px;
+  gap: 36px;
+}
+.btn__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+}

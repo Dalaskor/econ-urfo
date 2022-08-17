@@ -1,7 +1,249 @@
 @import "_normalize";
 @import "_fonts";
+@import "_variables";
 
 [class*="__container"] {
-    max-width: 1522px;
+    max-width: 1521px;
     margin: 0px auto;
-  }
+}
+
+.body {
+    font-family: 'Euclid Circular A';
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-main);
+}
+
+// <========== HEADER ==========>
+
+.header {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 17px 0px 30px 0px;
+    }
+
+    &__upmenu {
+        display: flex;
+        align-items: center;
+        padding-bottom: 47.11px;
+    }
+
+    &__burger {
+    }
+
+    &__logo {
+        margin-left: 76.62px;
+    }
+
+    &__search {
+        margin-left: 72px;
+        width: 815px;
+        height: 54px;
+        background: url("./../img/icons/search.svg") no-repeat 30.88px center;
+        background-color: #F7F7F7;
+        padding: 0px 66px;
+        font-size: 15px;
+        line-height: 19px;
+        color: #73737B;
+    }
+
+    &__buttons {
+        margin-top: 2px;
+        margin-left: 102px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__delivery {
+        display: flex;
+        align-items: center;
+    }
+
+    &__cabinet {
+        margin-left: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart {
+        margin-left: 34px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before {
+            position: absolute;
+            right: -12px;
+            top: -8px;
+            display: block;
+            content: "3";
+            width: 16.12px;
+            height: 16.12px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            text-align: center;
+            background: #1DBCD2;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 16.5px;
+            color: var(--color-white);
+        }
+    }
+
+    &__downmenu {
+        display: flex;
+        align-items: center;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 18.38px;
+
+    &__image {
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-left: -1px;
+    }
+
+    &__name {
+        font-size: 13px;
+        line-height: 16px;
+        color: #555555;
+        margin-top: 8px;
+        margin-left: -1px;
+    }
+}
+.downmenu {
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        &_locate {
+        }
+        &_phone {
+            margin-left: 168px;
+        }
+        &_mail {
+            margin-left: 168px;
+        }
+        &_edit {
+            margin-left: 168px;
+        }
+        &_contacts {
+            margin-left: 165px;
+            .downmenu__link {
+                display: flex;
+                align-items: center;
+                gap: 13px;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 23px;
+        color: var(--color-main);
+    }
+}
+
+// <========== BANNER ==========>
+
+.banner {
+    background: linear-gradient(91.79deg, #1DBCD1 16.94%, #3DDCF1 83.14%);
+    position: relative;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 82px 0px 82px 0px;
+    }
+
+    &__text {
+        width: 579px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 53px;
+        color: var(--color-white);
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--color-white);
+    }
+
+    &__image {
+        max-width: 613.38px;
+        position: absolute;
+        bottom: 0px;
+        left: 861px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__button {
+        margin-top: 5px;
+        margin-right: 2px;
+    }
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_banner {
+        width: 282px;
+        height: 78px;
+        background: var(--color-white);
+        border-radius: 2px;
+        gap: 36px;
+    }
+
+    &__img {
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+    }
+}
