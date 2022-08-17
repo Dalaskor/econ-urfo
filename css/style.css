@@ -204,6 +204,13 @@ img {
   align-items: center;
   gap: 18.38px;
 }
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.logo__image #document svg path {
+  fill: red;
+}
 .logo__body {
   display: flex;
   flex-direction: column;
@@ -318,4 +325,35 @@ img {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.02em;
+}
+
+.nav__container {
+  padding: 47px 0px 0px 0px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-left: 7px;
+}
+.nav__item:first-child {
+  margin-left: 0px;
+}
+.nav__item::after {
+  display: inline-block;
+  content: "/";
+  margin-left: 7px;
+}
+.nav__item:last-child::after {
+  display: none;
+}
+.nav__link {
+  font-size: 15px;
+  line-height: 19px;
+  color: #858A93;
+}
+.nav__link_active {
+  font-weight: 500px;
+  color: var(--color-main);
 }

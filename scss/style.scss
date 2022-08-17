@@ -103,7 +103,17 @@
     align-items: center;
     gap: 18.38px;
 
+    &:hover {
+        cursor: pointer;
+        opacity: 0.3;
+    }
+
     &__image {
+        #document {
+            svg path {
+                fill: red;
+            }
+        }
     }
 
     &__body {
@@ -245,5 +255,47 @@
         font-size: 18px;
         line-height: 23px;
         letter-spacing: 0.02em;
+    }
+}
+
+// <========== NAV ==========>
+
+.nav {
+
+    &__container {
+        padding: 47px 0px 0px 0px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 7px;
+        &:first-child {
+            margin-left: 0px;
+        }
+        &::after {
+            display: inline-block;
+            content: '/';
+            margin-left: 7px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 19px;
+        color: #858A93;
+
+        &_active {
+            font-weight: 500px;
+            color: var(--color-main);
+        }
     }
 }
