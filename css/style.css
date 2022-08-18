@@ -594,6 +594,19 @@ img {
   display: flex;
   align-items: center;
   gap: 22px;
+  transition: 0.4s;
+}
+.colorinp__colorlink:hover {
+  cursor: pointer;
+}
+.colorinp__colorlink:hover .colorinp__preview {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 2px 7px 10px rgba(142, 148, 170, 0.15);
+}
+.colorinp__colorlink:hover .colorinp__colorname {
+  color: var(--color-main);
 }
 .colorinp__colorlink_active {
   gap: 22px;
@@ -653,6 +666,9 @@ img {
   width: 6.86px;
   height: 7px;
   background: url("./../img/icons/cross-colorfilter.svg") no-repeat center center;
+}
+.colorinp__cancel:hover {
+  cursor: pointer;
 }
 .colorinp__cancel_active {
   display: block;
