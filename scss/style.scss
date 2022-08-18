@@ -860,3 +860,285 @@
         }
     }
 }
+
+// <========== SEO TEXT ==========>
+
+.seotext {
+    &__container {
+        margin-top: 194px;
+        padding-left: 213px;
+        padding-bottom: 181px;
+    }
+
+    p {
+        &:nth-child(1) {
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 44px;
+        }
+        &:nth-child(2) {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 48px;
+        }
+        &:nth-child(3) {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 26px;
+        }
+        &:nth-child(4) {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            margin-top: 50px;
+        }
+        &:nth-child(5) {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 28px;            
+        }
+        &:nth-child(6) {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 26px;
+        }
+    }
+}
+
+// <========== FOOTER ==========>
+
+.footer {
+    background: #FFFFFF;
+
+    &__container {
+        padding: 59px 0px 33px 0px;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: 280px 247px 247px 148px;
+        grid-gap: 199px;
+        padding-bottom: 57px;
+        border-bottom: 1px solid rgba(217, 218, 225, 0.8);
+    }
+
+    &__column {
+    }
+
+    &__logo {
+    }
+
+    &__phones {
+    }
+
+    &__phone-number {
+        margin-top: 56px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 20px;
+            height: 21px;
+            background: url("./../img/icons/phone-bl.svg") no-repeat center center;
+            margin-right: 14px;
+        }
+    }
+
+    &__phone-dates {
+        margin-top: 18px;
+    }
+
+    &__phone-date {
+        font-size: 16px;
+        line-height: 28px;
+        color: #7E838C;
+    }
+
+    &__mail {
+        margin-top: 56px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 21px;
+            height: 16px;
+            background: url("./../img/icons/mail-bl.svg") no-repeat center center;
+            margin-right: 14px;
+        }
+    }
+
+    &__networks {
+        margin-top: 60px;
+        margin-left: -2px;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    &__socials {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__social {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #7E838C;
+        display: flex;
+        align-items: center;
+        margin-left: 2px;
+        &_vk {
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 21px;
+                height: 13px;
+                background: url("./../img/icons/vk.svg") no-repeat center center;
+                margin-right: 11px;
+            }
+        }
+
+        &_insta {
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 21px;
+                height: 13px;
+                background: url("./../img/icons/insta.svg") no-repeat center center;
+                margin-right: 11px;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 7px;
+        display: block;
+        &:nth-child(1){
+        }
+        &:nth-child(2){
+        }
+        &:nth-child(3){}
+    }
+
+    &__list {
+        margin-top: 25px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 33px;
+        color: #7E838C;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            color: var(--color-main);
+        }
+    }
+
+    &__privatinfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 166px;
+        padding: 43px 0px 0px 0px;
+    }
+
+    &__copyright {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7E838C;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            color: var(--color-main);
+        }
+    }
+
+    &__politics {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7E838C;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            color: var(--color-main);
+        }
+    }
+
+    &__process {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7E838C;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            color: var(--color-main);
+        }
+    }
+
+    &__request {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #7E838C;
+        }
+    }
+
+    &__request-logo {
+        margin-left: 20px;
+        p {
+            font-family: 'Circe';
+            font-style: normal;
+            font-weight: 350;
+            font-size: 17px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 31px;
+                height: 31px;
+                background: url("./../img/logo/logo-requestDesign.svg") no-repeat center center;
+                margin-right: 10px;
+            }
+            span {
+                font-family: 'Circe';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+}

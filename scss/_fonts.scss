@@ -61,6 +61,15 @@
 @font-face {
     font-family: 'Circe';
     font-display: swap;
+    src: url("./../fonts/Circe-Light.woff")
+        format("woff");
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    font-display: swap;
     src: url("./../fonts/Circe-Bold.woff")
         format("woff");
     font-weight: 700;
