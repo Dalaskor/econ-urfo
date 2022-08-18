@@ -244,6 +244,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
 
     &_banner {
         width: 282px;
@@ -261,6 +266,7 @@
         font-size: 18px;
         line-height: 23px;
         letter-spacing: 0.02em;
+        color: var(--color-main);
     }
 }
 
@@ -400,6 +406,9 @@
     &_squares {
         margin-top: 60px;
     }
+    &_colors {
+        margin-top: 57px;
+    }
     &__title-price {
         font-size: 18px;
         line-height: 23px;
@@ -426,10 +435,15 @@
 
     &__content {
         margin-top: 26px;
+
+        &_color {
+            margin-top: 27px;
+        }
     }
 
     &__group, &__content { 
         display: none;
+        transition: 0.4s;
     }
 
     & :checked + &__title::after {
@@ -528,5 +542,121 @@
         // display: block;
         // font-size: 10px;
         // line-height: 25px;
+    }
+}
+
+.colorinp {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    &_1 {
+    }
+    &_2 {
+        margin-top: 16px;
+    }
+    &_3 {
+        margin-top: 16px;
+    }
+    &_4 {
+        margin-top: 20px;
+    }
+    &_5 {
+        margin-top: 19px;
+    }
+    &_6 {
+        margin-top: 19px;
+    }
+    &_7 {
+        margin-top: 19px;
+    }
+    &_8 {
+        margin-top: 19px;
+    }
+    &_9 {
+        margin-top: 19px;
+    }
+
+    &__colorlink {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        &_active {
+            gap: 22px;
+            .colorinp__preview {
+                width: 14px;
+                height: 14px;
+                border: 2px solid #FFFFFF;
+                box-shadow: 2px 7px 10px rgba(142, 148, 170, 0.15);
+            }
+
+            .colorinp__colorname {
+                color: var(--color-main);
+            }
+        }
+    }
+
+    &__preview {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 600px;
+
+        &_red {
+            background: #FF6060;
+        }
+
+        &_yellow {
+            background: #FFDC60;
+        }
+
+        &_green {
+            background: #72E191;
+        }
+
+        &_blue {
+            background: #6070FF;
+        }
+
+        &_purple {
+            background: #A660FF;
+        }
+
+        &_pink {
+            background: #FF60AC;
+        }
+
+        &_beige {
+            background: #EEC3AB;
+        }
+
+        &_white {
+            background: #FFFFFF;
+        }
+
+        &_black {
+            background: #292929;
+        }
+
+        &_grey {
+            background: #9D9D9D;
+        }
+    }
+
+    &__colorname {
+        font-size: 15px;
+        line-height: 19px;
+        color: #7E838C;
+    }
+
+    &__cancel {
+        display: none;
+        width: 6.86px;
+        height: 7px;
+        background: url("./../img/icons/cross-colorfilter.svg") no-repeat center center;
+        &_active {
+            display: block;
+        }
     }
 }
