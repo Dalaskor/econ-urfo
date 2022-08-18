@@ -328,12 +328,15 @@
 
     &__body {
         margin-top: 58px;
+        display: flex;
+
     }
 
     &__sidefilters {
     }
 
     &__content {
+        margin-left: 35px;
     }
 
     &__topfilters {
@@ -342,6 +345,9 @@
     &__productslist {
     }
 }
+
+// <========== SIDEFILTERS ==========>
+
 .sidefilters {
     width: 355px;
     height: 1910px;
@@ -496,10 +502,6 @@
         margin-top: 38px;
     }
 }
-.topfilters {
-}
-
-
 .priceSlider {
 	// margin-top: 10px;
 	position: relative;
@@ -544,7 +546,6 @@
         // line-height: 25px;
     }
 }
-
 .colorinp {
     display: flex;
     align-items: center;
@@ -658,5 +659,69 @@
         &_active {
             display: block;
         }
+    }
+}
+
+// <========== TOPFILTERS ==========>
+
+.topfilters {
+    width: 1131px;
+    height: 87px;
+    background: #F4F4F4;
+    border-radius: 3px;
+    padding: 0px 42px 0px 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__all {
+        display: flex;
+        align-items: center;
+    }
+
+    &__products {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #7E838C;
+    }
+
+    &__count {
+        font-size: 18px;
+        color: var(--color-main);
+    }
+
+    &__pricefilter {
+    }
+}
+.pricefilter {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    &__name {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #7E838C;
+    }
+
+    &__selectbox {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &__selected {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    &__btn {
+        display: block;
+        width: 13px;
+        height: 8px;
+        background: url("./../img/icons/arrow-sort.svg") no-repeat center center;
     }
 }

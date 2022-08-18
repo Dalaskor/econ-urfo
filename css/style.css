@@ -383,6 +383,10 @@ img {
 }
 .assortment__body {
   margin-top: 58px;
+  display: flex;
+}
+.assortment__content {
+  margin-left: 35px;
 }
 .sidefilters {
   width: 355px;
@@ -637,4 +641,56 @@ img {
 }
 .colorinp__cancel_active {
   display: block;
+}
+
+.topfilters {
+  width: 1131px;
+  height: 87px;
+  background: #F4F4F4;
+  border-radius: 3px;
+  padding: 0px 42px 0px 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topfilters__all {
+  display: flex;
+  align-items: center;
+}
+.topfilters__products {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #7E838C;
+}
+.topfilters__count {
+  font-size: 18px;
+  color: var(--color-main);
+}
+.pricefilter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.pricefilter__name {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #7E838C;
+}
+.pricefilter__selectbox {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.pricefilter__selected {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+.pricefilter__btn {
+  display: block;
+  width: 13px;
+  height: 8px;
+  background: url("./../img/icons/arrow-sort.svg") no-repeat center center;
 }
