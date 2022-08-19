@@ -139,7 +139,7 @@
             <div class="assortment__container">
                 <p class="assortment__title">Отопительное оборудование</p>
                 <div class="assortment__body">
-                    <div class="assortment__sidefilters sidefilters">
+                    <div class="assortment__sidefilters sidefilters" id="sideFilters">
                         <div class="sidefilters__header">
                             <p class="sidefilters__title">Фильтры</p>
                             <a href="#" class="sidefilters__reset">
@@ -349,6 +349,14 @@
                                 </section>
                             </div>
                         </div>
+                        <div class="sidefilters__buttons">
+                            <a class="sidefilters__apply-btn" id="btnFiltersApply">
+                                <p>Применить</p>
+                            </a>
+                            <a class="sidefilters__cancel-btn" id="btnFiltersCancel">
+                                <p>Сбросить</p>
+                            </a>
+                        </div>
                     </div>
                     <div class="assortment__content">
                         <div class="assortment__topfilters topfilters">
@@ -357,7 +365,7 @@
                                     <span class="topfilters__count">2394</span> товаров
                                 </p>
                             </div>
-                            <a class="topfilters__filter">Фильтры</a>
+                            <a class="topfilters__filter" id="btnFilters">Фильтры</a>
                             <a class="topfilters__sorting">Сортировка</a>
                             <div class="topfilters__pricefilter pricefilter">
                                 <p class="pricefilter__name">Цена:</p>
@@ -793,5 +801,6 @@
     </footer>
     <script src="./js/SliderPrice.js"></script>
     <script src="./js/SelectColor.js"></script>
+    <script src="./js/FilterMenu.js"></script>
 </body>
 </html>

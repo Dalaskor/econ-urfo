@@ -129,6 +129,4 @@ function moveRange (elem) {
 	    document.removeEventListener('touchend', onMouseUp);
 	    document.removeEventListener('touchmove', onMouseMove);
 	}
-
-	
 }
