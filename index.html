@@ -8,15 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Экон Урфо</title>
 </head>
-<body class="body">
+<body class="body" id="body">
     <header class="header">
         <div class="header__container">
             <div class="header__upmenu">
-                <a href="#" class="header__burger">
-                    <object data="./img/burger.svg" type="image/svg+xml" class="header__burger-img">
-                        Ваш браузер не поддерживает SVG!
-                    </object>
-                </a>
+                <a class="header__burger" id="btnMMenuOpen"></a>
                 <a href="#" class="header__logo logo">
                     <object data="./img/logo/logo.svg" type="image/svg+xml" class="logo__image">
                         Ваш браузер не поддерживает SVG!
@@ -103,6 +99,58 @@
             </div>
         </div>
     </header>
+    <div class="mainmenu" id="mainMenuView">
+        <div class="mainmenu__container">
+            <div class="mainmenu__head">
+                <a class="mainmenu__logo logo">
+                    <object data="./img/logo/logo.svg" type="image/svg+xml" class="logo__image">
+                        Ваш браузер не поддерживает SVG!
+                    </object>
+                    <div class="logo__body">
+                        <object data="./img/logo/logo-title.svg" type="image/svg+xml" class="logo__title">
+                            Ваш браузер не поддерживает SVG!
+                        </object>
+                        <p class="logo__name">Энергосберегающие технологии</p>
+                    </div>
+                </a>
+                <a class="mainmenu__btn-close" id="btnMMenuClose"></a>
+            </div>
+            <div class="mainmenu__body">
+                <div class="mainmenu__chapters">
+                    <div class="mainmenu__chapter chapter chapter_1">
+                        <input type="checkbox" id="chapter1" name="chapter__group" class="chapter__group">
+                        <label for="chapter1" class="chapter__title">Отопительное оборудование</label>
+                        <section class="chapter__content">
+                            <a href="#" class="chapter__link">Радиаторы отопления</a>
+                            <a href="#" class="chapter__link">Конвекторы отопления</a>
+                            <a href="#" class="chapter__link">Полотенцесушители</a>
+                            <a href="#" class="chapter__link">Арматура для радиаторов и конвекторов</a>
+                        </section>
+                    </div>
+                    <div class="mainmenu__chapter chapter chapter_2">
+                        <input type="checkbox" id="chapter2" name="chapter__group" class="chapter__group">
+                        <label for="chapter2" class="chapter__title">Комплектация объектов сантехникой</label>
+                    </div>
+                    <div class="mainmenu__chapter chapter chapter_3">
+                        <input type="checkbox" id="chapter3" name="chapter__group" class="chapter__group">
+                        <label for="chapter3" class="chapter__title">Дозаторы антисептика и стройки для диспенсера</label>
+                    </div>
+                    <div class="mainmenu__chapter chapter chapter_4">
+                        <input type="checkbox" id="chapter4" name="chapter__group" class="chapter__group">
+                        <label for="chapter4" class="chapter__title">Водосберегающая сантехника</label>
+                    </div>
+                </div>
+                <ul class="mainmenu__list">
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">Наше производство</a></li>
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">Готовые решения</a></li>
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">О компании</a></li>
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">Доставка и оплата</a></li>
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">Сертификаты</a></li>
+                    <li class="mainmenu__item"><a href="#" class="mainmenu__link">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <main class="main">
         <section class="banner">
             <div class="banner__container">
@@ -799,6 +847,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/MainMenu.js"></script>
     <script src="./js/SliderPrice.js"></script>
     <script src="./js/SelectColor.js"></script>
     <script src="./js/FilterMenu.js"></script>
